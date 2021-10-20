@@ -3,15 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        #container{
+            padding:20px;
+            padding-top: 10px;
+        }
+
+        #logo_img{
+            float:left;
+            height: 5em;
+            width:5em;
+        }
+
+        #menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        #menu li {
+            display: inline;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello World</h1>
-<h2>How are you? Watchya Doing????</h2>
+    <div id="container">
+        <!--This is where Logo and Menu will go-->
+        <div id="header">
+            <span id="logo">
+                <img id="logo_img" src="../images/logo.png">
+            </span>
 
-<p>My Testing Line</p>
-<h3>Updated Now</h3>
+            <span id="menu">
+                <ul id="menu">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Topics</a></li>
+                    <li> <a href="#">About</a></li>
+                </ul>
+            </span>
 
-<h2> What are you doing, here? </h2>
-<p> One Last check before finalizing </p>
+        <!--This is where Main Content will go-->
+        <div id="body">
+        </div>
+
+        <!--This is where Footer will go-->
+        <div id="footer">
+        </div>
+    </div>
+
+
 </body>
 </html>
