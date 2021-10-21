@@ -5,52 +5,83 @@
     <title>Title</title>
 
     <style>
-        #container{
-            padding:20px;
-            padding-top: 10px;
-        }
-
         #logo_img{
-            float:left;
-            height: 5em;
-            width:5em;
+            align-content:center;
+            height: 2em;
+            width:2em;
         }
 
-        #menu {
-            list-style-type: none;
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
             margin: 0;
-            padding: 0;
-            float: right;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        #menu li {
-            display: inline;
-            font-size: 2em;
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #ddd;
+            float:right;
         }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgba(14, 14, 14, 1.00);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #fff;
+            padding: 10px;
+            height: 200px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+
     </style>
 </head>
 <body>
     <div id="container">
         <!--This is where Logo and Menu will go-->
-        <div id="header">
-            <span id="logo">
-                <img id="logo_img" src="../images/logo.png">
-            </span>
-
-            <span id="menu">
-                <ul id="menu">
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">Topics</a></li>
-                    <li> <a href="#">About</a></li>
-                </ul>
-            </span>
-
-        <!--This is where Main Content will go-->
-        <div id="body">
+        <div class="header">
+            <div class="topnav">
+                <a href="#">Home</a>
+                <a href="#">Topics</a>
+                <a href="#">About</a>
+            </div>
         </div>
 
+
+        <!--This is where Main Content will go-->
+        <div class="content">
+            <h2>CSS Template</h2>
+            <p>A topnav, content and a footer.</p>
+        </div>
+
+
         <!--This is where Footer will go-->
-        <div id="footer">
+        <div class="footer">
+            <p>Footer</p>
         </div>
     </div>
 
