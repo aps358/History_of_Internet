@@ -101,3 +101,14 @@ li a:hover {
     margin: 0;
     font-size: 28px;
 }
+
+.section{
+    padding: 14px;
+    display: inline-block;
+    width:85%;
+}
+
+.section-image{
+    height:200px;
+    width:200px;
+}
