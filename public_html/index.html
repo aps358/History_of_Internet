@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Title</title>
 
     <style>
-        #logo_img{
-            align-content:center;
-            height: 2em;
-            width:2em;
-        }
 
         * {
             box-sizing: border-box;
@@ -19,71 +15,108 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            height:100%;
         }
 
-        /* Style the top navigation bar */
-        .topnav {
-            overflow: hidden;
-            background-color: #ddd;
-            float:right;
-        }
-
-        /* Style the topnav links */
-        .topnav a {
-            float: left;
+        .container{
+            top:0;
+            left:0;
+            right:0;
+            overflow:hidden;
             display: block;
-            color: rgba(14, 14, 14, 1.00);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            z-index:-1;
         }
 
-        /* Change color on hover */
-        .topnav a:hover {
-            background-color: #bbb;
-            color: black;
+        /* Style the logo */
+        .logo {
+            height:60px;
+            float:left;
         }
 
         /* Style the content */
         .content {
             background-color: #fff;
             padding: 10px;
-            height: 200px; /* Should be removed. Only for demonstration */
+            display: block;
         }
 
         /* Style the footer */
         .footer {
             background-color: #f1f1f1;
             padding: 10px;
+            bottom:0;
+            position: fixed;
+            width:100%
         }
+
+        /*Navbar*/
+        ul {
+
+            float:right;
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 16px;
+            height: 60px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .navbar{
+            background-color: #333;
+            height:60px;
+            padding: 0;
+            overflow: hidden;
+        }
+
 
 
     </style>
 </head>
 <body>
-    <div id="container">
-        <!--This is where Logo and Menu will go-->
-        <div class="header">
-            <div class="topnav">
-                <a href="#">Home</a>
-                <a href="#">Topics</a>
-                <a href="#">About</a>
-            </div>
-        </div>
+<div class="container">
+    <!--This is where Logo and Menu will go-->
 
 
-        <!--This is where Main Content will go-->
-        <div class="content">
-            <h2>CSS Template</h2>
-            <p>A topnav, content and a footer.</p>
-        </div>
 
+    <div class="navbar">
+        <a href="#"><img src="../images/logo.png" class="logo"></a>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
 
-        <!--This is where Footer will go-->
-        <div class="footer">
-            <p>Footer</p>
-        </div>
+            <li><a href="#contact">Options</a></li>
+
+            <li><a href="#about">About</a></li>
+        </ul>
     </div>
+
+
+    <!--This is where Main Content will go-->
+    <div class="content">
+        <h2>CSS Template</h2>
+        <p>A topnav, content and a footer.</p>
+    </div>
+
+
+    <!--This is where Footer will go-->
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</div>
 
 
 </body>
