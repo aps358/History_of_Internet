@@ -1,8 +1,9 @@
 version: "3.2"
+
 services:
   php:
     image:
-        php:7.4-apache
+      php:7.4-apache
   docs:
     build:
       context: .
